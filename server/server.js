@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-const host = '159.89.83.120';
+const host = 'localhost';
 const port = '6500';
 
 // Server Connection
@@ -14,4 +14,4 @@ server.listen(port, (err) => {
   }
 });
 
-server.use(express.static('../client/dist'));
+server.use(express.static('./client/dist'));
