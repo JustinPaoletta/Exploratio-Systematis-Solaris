@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const host = 'localhost';
-const port = '6500';
+const port = process.env.PORT || '6500';
 
 // Server Connection
 const server = express();
